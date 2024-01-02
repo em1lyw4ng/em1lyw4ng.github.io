@@ -1,4 +1,23 @@
+.section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+.section:last-of-type {
+    padding-bottom: 4rem;
+}
+
+.section-title {
+    font-family: 'PT Serif', serif;
+    font-size: 2.0rem;
+}
+
+.image_about {
+    width: 70%;
+}
+
 .hero-banner {
+    height: 80vh;
     background: no-repeat center center;
     background-size: cover;
     padding: 100px 0;
@@ -14,4 +33,13 @@
 
 .hero_title {
     font-family: 'PT Serif', serif;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }
