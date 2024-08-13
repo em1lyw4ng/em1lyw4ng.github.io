@@ -1,116 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--metadata of site-->
-
 <head>
-    <title>Emily Wang</title>
-    <meta charset="utf-8">
-
-    <!--no CDN cache?!-->
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
-
-    <!--set to device dimensions-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--add bootstrap css and js-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-
-    <!--add custom css file-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <!--different fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lora:italic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:wght@600&display=swap"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Serif+Traditional+Chinese' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 
 <body>
-    <!--nav bar that's fixed to the top-->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-
-            <!--add icon-->
-            <a class="navbar-brand" href="#">
-                <img src="/files/icon.jpg" style="height: 40px;">
-            </a>
-
-            <!--hamburgered navbar when window shrinks-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--sections of navbar-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resumes">Resumes</a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-
-    <!--hero banner-->
-    <section class="container-fluid section hero-banner" id="home">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 hero_text">
-                <img src="files/headshot.png" alt="Emily Wang smiling in a forest with snow" class="profile-pic">
-                <h1 class="hero_title">hi, i'm *Emily Wang*</h1>
-                <p class="hero_desc">technical person with a lot of excitement for working on things</p>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- about section -->
-    <section class="container mt-4 pt-4 section" id="about">
-        <div class="row mt-4">
-            <div class="col-lg-5">
-                <img src="files/sticker.png" class="image_about"
-                    alt="Drawing of a cat holding a mug in front of a computer">
-            </div>
-
-            <div class="col-lg-7">
-                <h1 class="section-title">about me</h1>
-                <p class="about_desc"> Hi again! I'm currently a senior studying
-                    Computer Science at Pomona College, graduating
-                    in May 2024. To make a long story short, I'm at a point in my journey where I'm interested in
-                    software engineering
-                    <i>&&</i> product management. Much of this interest comes from my passion for finding,
-                    understanding, and addressing unmet user
-                    needs.
-                </p>
-                <div class="row mt-3">
-                    <p> Other things that I love are my cat (yes, that's him and
-                        his name is Afu), being outdoors, fostering community, and consuming food content (no pun
-                        intended).
-                    </p>
-                </div>
-                <div class="row mt-3">
-                    <p> Feel free to take a look at what's around here!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
 
+
+    <!-- header -->
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#work">work</a></li>
+                <li class="logo"><img src="files/icon.png" alt="Emily's Logo"></li>
+                <!-- Replace with your logo image -->
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- main -->
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <h1> <span>emily wang</span> <span class="me">王</span> </h1>
+                <p class="description"> is a full stack <span class="highlight1">product designer</span> && <span
+                        class="highlight2">software_engineer</span> <br>
+                    motivated to simplify + uplift human experiences</p>
+            </div>
+            <div class="background-image">
+
+            </div>
+        </section>
+
+        <!-- lil' about -->
+        <section id="about" class="about">
+            <h2>a lil' about me</h2>
+            <ul class="emojis">
+                <li>✏️</li>
+                <li>🌿</li>
+                <li>❤️</li>
+            </ul>
+            <div class="avatar">
+                <img src="files/sticker.png" alt="Emily's Avatar">
+            </div>
+        </section>
+
+        <!-- work -->
+        <section id="work" class="work">
+            <h2>some work I've done</h2>
+            <div class="work-gallery">
+                <div class="work-item green">
+                    <div class="work-image-container">
+                        <img src="image1.png" alt="Project Image 1" class="work-image"> <!-- Replace with your image -->
+                    </div>
+                    <p class="work-text">Feature Development | Work Experience</p>
+                </div>
+                <div class="work-item blue">
+                    <div class="work-image-container">
+                        <img src="image2.png" alt="Project Image 2" class="work-image"> <!-- Replace with your image -->
+                    </div>
+                    <p class="work-text">Software Engineering | Work Experience</p>
+                </div>
+                <div class="work-item yellow">
+                    <div class="work-image-container">
+                        <img src="image3.png" alt="Project Image 3" class="work-image"> <!-- Replace with your image -->
+                    </div>
+                    <p class="work-text">Product Ownership | Project</p>
+                </div>
+                <div class="work-item pink">
+                    <div class="work-image-container">
+                        <img src="image4.png" alt="Project Image 4" class="work-image"> <!-- Replace with your image -->
+                    </div>
+                    <p class="work-text">Software Engineering | Project</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>2024 emily © | <a href="#">LinkedIn</a></p>
+    </footer>
 </body>
 
 </html>

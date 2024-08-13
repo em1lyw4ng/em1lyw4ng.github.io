@@ -1,45 +1,292 @@
-.section {
-    margin-top: 4rem;
-    padding-top: 4rem;
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.section:last-of-type {
-    padding-bottom: 4rem;
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
-.section-title {
-    font-family: 'PT Serif', serif;
-    font-size: 2.0rem;
-}
-
-.image_about {
-    width: 70%;
-}
-
-.hero-banner {
-    height: 80vh;
-    background: no-repeat center center;
-    background-size: cover;
-    padding: 100px 0;
-}
-
-.hero_text {
-    text-align: center;
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* header as part of intro section */
+    width: 100%;
+    z-index: 2;
+    top: 10px;
 }
 
-.hero_title {
-    font-family: 'PT Serif', serif;
-    font-size: 2.5rem;
-    padding-top: 2rem;
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+.nav-list .logo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-list li {
+    font-size: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+/* Main Intro Section */
+.intro {
+    position: relative;
+    /* bottom of banner */
+    padding-top: 150px;
+    padding-bottom: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.intro-text {
+    font-family: 'Lora';
+    width: 100%;
+    padding-left: calc(50% - 45%);
+    /* align to the left edge of the work items */
+    /* top of banner */
+
+}
+
+.me {
+    font-family: 'Noto Serif Traditional Chinese';
+    color: #ececec;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    text-align: left;
+    font-weight: normal;
+}
+
+.intro-text .description {
+    font-family: 'Roboto Mono';
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.description {}
+
+.description .highlight1 {
+    font-family: 'Caveat';
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+/* make bold */
+.description .highlight2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    color: #333;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('files/hero-background-1.svg');
+    background-size: cover;
+    background-position: bottom center;
+    z-index: -1;
+    filter: saturate(1.5);
+    transform: rotate(340deg);
+}
+
+/* About Section */
+.about {
+    position: relative;
+    margin-top: -60px;
+    padding-left: calc(50% - 45%);
+    /* Align to the left edge of the work items */
+}
+
+.about h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.emojis {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+.emojis li {
+    margin-bottom: 10px;
+}
+
+.avatar {
+    position: absolute;
+    top: -70%;
+    right: 170px;
+    /* Move the avatar to the left to overlap with the background */
+    transform: translateY(-50%);
+    z-index: 3;
+    /* Ensure the avatar is above the background */
+}
+
+
+.avatar img {
+    width: 340px;
+}
+
+/* Work Section */
+.work {
+    margin-top: 40px;
+    text-align: left;
+    padding-left: calc(50% - 45%);
+    padding-right: 75px;
+    /* To align with the right edge of the avatar */
+}
+
+.work h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Space between two items per row */
+    gap: 20px;
+}
+
+.work-item {
+    width: calc(50% - 10px);
+    /* Adjusted to ensure two items fit per row with gap */
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.work-image-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-item:hover .work-image {
+    transform: scale(1.1);
+}
+
+.work-text {
+    font-size: 0.9rem;
+    text-align: left;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Footer Section */
+footer {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    padding-left: calc(50% - 45%);
+    padding-right: 150px;
+    /* To align with the right edge of the avatar */
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-gallery {
+        flex-direction: column;
+    }
+
+    .work-item {
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .intro-text {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .avatar {
+        position: static;
+        transform: none;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about {
+        padding-left: 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .work {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
