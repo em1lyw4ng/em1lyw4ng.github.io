@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily's Portfolio</title>
+    <link rel="icon" href="files/sticker.png" type="image/x-icon">
+    <title>Emily Wang</title>
     <link rel="stylesheet" href="style.css">
 
     <!--different fonts-->
@@ -12,13 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Lora:italic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:wght@600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif+Traditional+Chinese' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 </head>
 
 <body>
@@ -30,8 +30,7 @@
         <nav>
             <ul class="nav-list">
                 <li><a href="#work">work</a></li>
-                <li class="logo"><img src="files/icon.png" alt="Emily's Logo"></li>
-                <!-- Replace with your logo image -->
+                <li class="logo"><a href="#top"><img src="files/icon.png" alt="Emily's Logo"></a></li>
                 <li><a href="about.html">about</a></li>
             </ul>
         </nav>
@@ -42,10 +41,10 @@
     <main>
         <section class="intro">
             <div class="intro-text">
-                <h1> <span>emily wang</span> <span class="me">王</span> </h1>
-                <p class="description"> is a full stack <span class="highlight1">product designer</span> && <span
-                        class="highlight2">software_engineer</span> <br>
-                    motivated to simplify + uplift human experiences</p>
+                <h1> <span>emily</span> <span class="eng">Wang</span> </span><span class="chn"> </span> </h1>
+                <p class="description"> <span class="highlight1">product designer</span> && <span
+                        class="highlight2">software_engineer</span>
+                </p>
             </div>
             <div class="background-image">
 
@@ -56,50 +55,79 @@
         <section id="about" class="about">
             <h2>a lil' about me</h2>
             <ul class="emojis">
-                <li>✏️</li>
-                <li>🌿</li>
-                <li>❤️</li>
+                <li>
+                    <span class="emoji">🛠️</span>
+                    <span class="bold-text">prev. TPM <a href="https://www.cooklist.com" target="_blank">@cooklist</a>,
+                        SWE <a href="https://www.salesforce.com" target="_blank">@salesforce</a>, design <a
+                            href="https://laist.com/" target="_blank">@LAist</a>:</span><br>
+                    <span class="regular-text">tinkering w/ code, jamming w/ diff. teams, doing it for the users</span>
+                </li>
+                <li>
+                    <span class="emoji">📚</span>
+                    <span class="bold-text">graduated from <a href="https://www.pomona.edu" target="_blank">Pomona
+                            College</a><span class="arrow">↗</span> <a href="https://www.cs.pomona.edu"
+                            target="_blank">CS</a><span class="arrow">↗</span>:</span><br>
+                    <span class="regular-text">5x teaching assistant, crisis counselor, aamp mentor</span>
+                </li>
+                <li>
+                    <span class="emoji">❤️</span>
+                    <span class="bold-text">cat mom, random hobby builder:</span><br>
+                    <span class="regular-text">learning to cook, crochet, art (and yes, that's my cat)</span>
+                </li>
             </ul>
             <div class="avatar">
                 <img src="files/sticker.png" alt="Emily's Avatar">
             </div>
         </section>
 
+
         <!-- work -->
         <section id="work" class="work">
-            <h2>some work I've done</h2>
+            <h2>exp.</h2>
             <div class="work-gallery">
-                <div class="work-item green">
-                    <div class="work-image-container">
-                        <img src="image1.png" alt="Project Image 1" class="work-image"> <!-- Replace with your image -->
+                <div class="work-container work-item-1">
+                    <div class="work-item">
+                        <div class="work-image-container">
+                            <img src="files/cook.png" alt="Project Image 1" class="work-image">
+                        </div>
                     </div>
-                    <p class="work-text">Feature Development | Work Experience</p>
+                    <p class="work-text">technical product management | work experience</p>
                 </div>
-                <div class="work-item blue">
-                    <div class="work-image-container">
-                        <img src="image2.png" alt="Project Image 2" class="work-image"> <!-- Replace with your image -->
+
+                <div class="work-container work-item-2">
+                    <div class="work-item">
+                        <div class="work-image-container">
+                            <img src="files/sf.png" alt="Project Image 2" class="work-image">
+                        </div>
                     </div>
-                    <p class="work-text">Software Engineering | Work Experience</p>
+                    <p class="work-text">software engineering | work experience</p>
                 </div>
-                <div class="work-item yellow">
-                    <div class="work-image-container">
-                        <img src="image3.png" alt="Project Image 3" class="work-image"> <!-- Replace with your image -->
+
+                <div class="work-container work-item-3">
+                    <div class="work-item">
+                        <div class="work-image-container">
+                            <img src="files/la.png" alt="Project Image 3" class="work-image">
+                        </div>
                     </div>
-                    <p class="work-text">Product Ownership | Project</p>
+                    <p class="work-text">product ownership | project</p>
                 </div>
-                <div class="work-item pink">
-                    <div class="work-image-container">
-                        <img src="image4.png" alt="Project Image 4" class="work-image"> <!-- Replace with your image -->
+
+                <div class="work-container work-item-4">
+                    <div class="work-item">
+                        <div class="work-image-container">
+                            <img src="files/vocab.png" alt="Project Image 4" class="work-image">
+                        </div>
                     </div>
-                    <p class="work-text">Software Engineering | Project</p>
+                    <p class="work-text">software engineering | project</p>
                 </div>
             </div>
+
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- footer Section -->
     <footer>
-        <p>2024 emily © | <a href="#">LinkedIn</a></p>
+        <p>2024 emily © | <a href="https://www.linkedin.com/in/emcwang/" target="_blank">LinkedIn</a></p>
     </footer>
 </body>
 

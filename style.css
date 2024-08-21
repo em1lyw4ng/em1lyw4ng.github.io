@@ -1,18 +1,15 @@
-/* General Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header Styling */
 header {
     display: flex;
     justify-content: center;
@@ -51,12 +48,11 @@ header {
     max-height: 40px;
 }
 
-/* Main Intro Section */
 .intro {
     position: relative;
     /* bottom of banner */
-    padding-top: 150px;
-    padding-bottom: 300px;
+    padding-top: 180px;
+    padding-bottom: 180px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -66,43 +62,50 @@ header {
 
 .intro-text {
     font-family: 'Lora';
+    font-style: italic;
     width: 100%;
-    padding-left: calc(50% - 45%);
+    padding-left: calc(38%);
     /* align to the left edge of the work items */
     /* top of banner */
 
 }
 
-.me {
+.eng {
+    font-style: normal;
+}
+
+.chn {
     font-family: 'Noto Serif Traditional Chinese';
     color: #ececec;
 }
 
 .intro-text h1 {
-    font-size: 3rem;
+    font-size: 3.4rem;
     text-align: left;
     font-weight: normal;
 }
 
 .intro-text .description {
     font-family: 'Roboto Mono';
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: left;
+    margin-left: -50px;
 }
 
-.description {}
+.description {
+    margin-top: -5px;
+}
 
 .description .highlight1 {
     font-family: 'Caveat';
-    font-weight: 600;
-    font-size: 1.7rem;
+    font-weight: 400;
+    font-size: 1.8rem;
     color: #333;
 }
 
-/* make bold */
 .description .highlight2 {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 600;
+    font-weight: 400;
     color: #333;
 }
 
@@ -112,20 +115,18 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('files/hero-background-1.svg');
+    background-image: url('files/hero-background.jpg');
     background-size: cover;
     background-position: bottom center;
     z-index: -1;
     filter: saturate(1.5);
-    transform: rotate(340deg);
 }
 
-/* About Section */
 .about {
     position: relative;
-    margin-top: -60px;
+    margin-top: 80px;
     padding-left: calc(50% - 45%);
-    /* Align to the left edge of the work items */
+    /* align to the left edge of the work items */
 }
 
 .about h2 {
@@ -134,6 +135,10 @@ header {
     margin-bottom: 10px;
     text-align: left;
     width: 100%;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 124, 124);
+    text-decoration-style: wavy;
+    text-underline-offset: 3px;
 }
 
 .about-content {
@@ -143,26 +148,47 @@ header {
 }
 
 .emojis {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    list-style: none;
-    font-size: 1rem;
-    margin-right: 20px;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .emojis li {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
+    line-height: 1.5;
 }
+
+.emoji {
+    display: inline-block;
+    width: 2em;
+    /* top line */
+    vertical-align: top;
+}
+
+.bold-text {
+    font-family: 'Rubik';
+    font-weight: 600;
+    color: #0F4C81;
+}
+
+.arrow {
+    font-size: 0.1em;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
+
+.regular-text {
+    display: inline-block;
+    margin-left: 2.3em;
+}
+
 
 .avatar {
     position: absolute;
-    top: -70%;
-    right: 170px;
-    /* Move the avatar to the left to overlap with the background */
+    top: 10%;
+    right: 100px;
     transform: translateY(-50%);
     z-index: 3;
-    /* Ensure the avatar is above the background */
 }
 
 
@@ -170,17 +196,16 @@ header {
     width: 340px;
 }
 
-/* Work Section */
 .work {
     margin-top: 40px;
-    text-align: left;
     padding-left: calc(50% - 45%);
     padding-right: 75px;
-    /* To align with the right edge of the avatar */
+    /* align with the right edge of the avatar */
+    margin-bottom: -50px;
 }
 
 .work h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -188,33 +213,66 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* Space between two items per row */
     gap: 20px;
+    transform: scale(0.90);
+    transform-origin: top left;
+    margin-left: 100px;
 }
 
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
 .work-item {
-    width: calc(50% - 10px);
-    /* Adjusted to ensure two items fit per row with gap */
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work-item-1 {
+    width: calc(60%);
+    height: 420px;
+}
+
+.work-item-2 {
+    width: calc(38%);
+    height: 420px;
+}
+
+.work-item-3 {
+    width: calc(45%);
+    height: 400px;
+}
+
+.work-item-4 {
+    width: calc(53%);
+    height: 400px;
+}
+
+.work-text {
+    font-size: 1rem;
+    text-align: left;
+    color: #777777;
 }
 
 .work-image-container {
     width: 100%;
-    height: auto;
+    height: 100%;
     position: relative;
     overflow: hidden;
 }
 
 .work-image {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -222,29 +280,18 @@ header {
     transform: scale(1.1);
 }
 
-.work-text {
-    font-size: 0.9rem;
-    text-align: left;
-    color: #333;
-    margin-top: 5px;
-}
-
-/* Footer Section */
 footer {
     text-align: left;
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 0.9rem;
     padding-left: calc(50% - 45%);
-    padding-right: 150px;
-    /* To align with the right edge of the avatar */
 }
 
 footer a {
     color: #333;
-    text-decoration: none;
 }
 
-/* Responsive Design */
+/* responsive design */
 @media (max-width: 768px) {
     .work-gallery {
         flex-direction: column;
