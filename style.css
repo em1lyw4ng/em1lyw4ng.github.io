@@ -299,6 +299,7 @@ footer a {
     margin-right: auto;
     text-align: left;
     padding: 20px;
+    margin-bottom: 100px;
     position: relative;
 }
 
@@ -360,11 +361,29 @@ footer a {
     transform: scale(1.8);
 }
 
-footer {
-    text-align: left;
-    padding-left: calc(50% - 550px);
-    margin-bottom: 20px;
+.footer-wrapper {
+    position: relative;
+    z-index: 0;
 }
+
+.footer-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url('files/hero-background.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    transform: rotate(180deg);
+    filter: saturate(1.5);
+    z-index: -1;
+}
+
+.footer-content {
+    padding-bottom: 10px;
+}
+
 
 /* responsive design */
 @media (max-width: 768px) {
@@ -386,20 +405,17 @@ footer {
         width: 100%;
         display: flex;
         justify-content: center;
-        /* Center the image on smaller screens */
     }
 
     .it-me img {
         width: 70%;
         height: auto;
         transform: scale(1);
-        /* Adjust scale for smaller screens */
     }
 
     footer {
         padding-left: 20px;
         padding-right: 20px;
         text-align: center;
-        /* Center the footer text on smaller screens */
     }
 }
