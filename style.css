@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #333;
     line-height: 1.6;
 }
@@ -382,6 +382,135 @@ footer a {
 
 .footer-content {
     padding-bottom: 10px;
+}
+
+.case-study-header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.case-study-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.case-study-caption {
+    font-size: 1rem;
+    font-style: italic;
+    color: #747474;
+    margin-top: 10px;
+}
+
+.case-study-content {
+    font-family: 'Rubik';
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.context,
+.context-description,
+.problem-section,
+.solution-section,
+.reflections {
+    margin-bottom: 50px;
+}
+
+.context h3,
+.problem-section h3,
+.reflections h3,
+.solution-section h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.context-details {
+    color: #747474;
+    margin-bottom: 20px;
+}
+
+.button-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background: #aaaaaa;
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s ease-in;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background: #747474;
+}
+
+.button-primary a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.case-images div {
+    text-align: center;
+}
+
+.case-images img {
+    width: 75%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.problem-description {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.quote {
+    color: #469c77;
+    font-style: italic;
+}
+
+.problem-statement {
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+    background: #333;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.ellipsis {
+    text-align: center;
+    line-height: 1rem;
+}
+
+.green-hmw {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    background: linear-gradient(to right, #739D6B, #283726);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+}
+
+.reflections {
+    margin-bottom: 200px;
 }
 
 
