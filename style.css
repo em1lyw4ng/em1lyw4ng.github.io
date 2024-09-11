@@ -513,6 +513,28 @@ footer a {
     margin-bottom: 200px;
 }
 
+/* hide modal by default */
+.image-display {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.image-display img {
+    border-radius: 10px;
+}
+
+.image-display.active {
+    display: flex;
+}
+
+
 
 /* responsive design */
 @media (max-width: 768px) {
