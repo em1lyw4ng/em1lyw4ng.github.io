@@ -487,7 +487,7 @@ footer a {
     font-weight: bold;
     text-align: center;
     font-size: 1.1rem;
-    background: #333;
+    background: linear-gradient(to right, #739D6B, #283726);
     -webkit-background-clip: text;
     color: transparent;
 }
