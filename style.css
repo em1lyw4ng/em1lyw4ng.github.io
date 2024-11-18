@@ -430,6 +430,13 @@ footer a {
     margin-bottom: 20px;
 }
 
+.centered-list li {
+    margin-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
 .button-primary {
     display: inline-block;
     padding: 10px 20px;
@@ -534,8 +541,6 @@ footer a {
 .image-display.active {
     display: flex;
 }
-
-
 
 /* responsive design */
 @media (max-width: 768px) {
